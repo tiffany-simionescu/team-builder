@@ -4,7 +4,7 @@ export default function Form(props) {
   const [team, setTeam] = useState({name:"", email:"", role:""});
 
   const handleChange = evt => {
-
+    setTeam({...team, [evt.target.name]: evt.target.value});
   };
 
   const handleSubmit = evt => {
@@ -46,7 +46,7 @@ export default function Form(props) {
         />
 
       <button type="submit">Add Team Member</button>
-      
+
     </form>
   );
 }
