@@ -21,7 +21,7 @@ export default function Form(props) {
           name="name" 
           type="text" 
           placeholder="Name" 
-          value={team.name} 
+          // value={team.name} 
           onChange={handleChange} 
         />
 
@@ -31,7 +31,7 @@ export default function Form(props) {
           name="email" 
           type="text" 
           placeholder="Email" 
-          value={team.email} 
+          // value={team.email} 
           onChange={handleChange} 
         />
 
@@ -41,11 +41,12 @@ export default function Form(props) {
           name="role" 
           type="text" 
           placeholder="Role" 
-          value={team.role} 
+          // value={team.role} 
           onChange={handleChange} 
         />
 
       <button type="submit">Add Team Member</button>
+      
     </form>
   );
 }
