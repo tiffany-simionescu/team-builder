@@ -21,7 +21,7 @@ export default function Form(props) {
           name="name" 
           type="text" 
           placeholder="Name" 
-          // value={team.name} 
+          value={team.name} 
           onChange={handleChange} 
         />
 
@@ -31,19 +31,26 @@ export default function Form(props) {
           name="email" 
           type="text" 
           placeholder="Email" 
-          // value={team.email} 
+          value={team.email} 
           onChange={handleChange} 
         />
 
       <label htmlFor="role">Role:</label>
-        <input 
+        {/* <input 
           id="role" 
           name="role" 
           type="text" 
           placeholder="Role" 
-          // value={team.role} 
+          value={team.role} 
           onChange={handleChange} 
-        />
+        /> */}
+        <select id="role" name="role" value={team.role} onChange={handleChange}>
+          <option value="None"></option>
+          <option value="Full Stack Web Developer">Full Stack Web Developer</option>
+          <option value="UX Designer">UX Designer</option>
+          <option value="Data Scientist">Data Scientist</option>
+          <option value="iOS Developer">iOS Developer</option>
+        </select>
 
       <button type="submit">Add Team Member</button>
 
