@@ -6,9 +6,10 @@ export default function TeamMembers(props) {
       {props.memberList.map(member => {
         return (
           <div className="member" key={member.id}>
-            <h3>Name: {member.name}</h3>
-            <p>Email: {member.email}</p>
-            <p>Role: {member.role}</p>
+            <p><span className="title">Name:</span> <span className="name-outcome">{member.name}</span></p>
+            <p><span className="title">Email:</span> <span className="email-outcome">{member.email}</span></p>
+            <p><span className="title">Role:</span> <span className="role-outcome">{member.role}</span></p>
+            <hr />
           </div>
         );
       })}

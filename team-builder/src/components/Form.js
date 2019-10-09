@@ -14,7 +14,7 @@ export default function Form(props) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="form" onSubmit={handleSubmit}>
       <label htmlFor="name">Name:</label>
         <input 
           id="name" 
@@ -24,6 +24,7 @@ export default function Form(props) {
           value={team.name} 
           onChange={handleChange} 
         />
+      <br />
 
       <label htmlFor="email">Email:</label>
         <input 
@@ -34,6 +35,7 @@ export default function Form(props) {
           value={team.email} 
           onChange={handleChange} 
         />
+      <br />
 
       <label htmlFor="role">Role:</label>
         {/* <input 
@@ -51,6 +53,7 @@ export default function Form(props) {
           <option value="Data Scientist">Data Scientist</option>
           <option value="iOS Developer">iOS Developer</option>
         </select>
+        <br />
 
       <button type="submit">Add Team Member</button>
 
